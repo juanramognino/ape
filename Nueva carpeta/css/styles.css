@@ -1,0 +1,371 @@
+/* Estilos globales */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    background-color: #ffffff;
+}
+
+/* Estilos del header */
+header {
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Asegura que el header ocupe el 100% del ancho de la ventana */
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos a los extremos */
+    align-items: center; /* Alinea verticalmente */
+    padding: 10px 20px; /* Ajusta padding interno para dar espacio */
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Para que esté encima del contenido */
+    box-sizing: border-box; /* Incluye padding dentro del ancho total */
+}
+
+.logo {
+    font-size: 1.5em;
+    font-family: "Krona One", sans-serif;
+    color: #333;
+    margin-left: 33px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    margin-left: 50%;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s;
+    font-family: "Inter", sans-serif;
+}
+
+.nav-links a:hover {
+    color: #012D3A;
+}
+
+.language-btn {
+    padding: 8px 20px;
+    border: 2px solid #F28705;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.language-btn:hover {
+    background-color: #F28705;
+    color: #fff;
+}
+
+/* Sección de inicio */
+.inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 20px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.texto-inicio {
+    max-width: 45%;
+}
+
+.texto-inicio h1 {
+    margin-top: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 5em;
+    color: #012D3A;
+    margin-bottom: 20px;
+    white-space: pre-wrap;
+    margin-left: 30px;
+}
+
+.texto-inicio p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.action-btn {
+    padding: 10px 25px;
+    border: 2px solid #F28705;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    display: block;
+    margin-bottom: 15px;
+    width: fit-content;
+}
+
+.action-btn:hover {
+    background-color: #F28705;
+    color: #fff;
+}
+
+.imagenes-inicio {
+    display: flex;
+    gap: 10px;
+    flex-grow: 1;
+    margin-top: 30px;
+    margin-right: 0; /* Cambiado para estar más pegado a la derecha */
+    justify-content: flex-end; /* Alinea las imágenes a la derecha */
+}
+
+.imagenes-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 40%;
+}
+
+.imagenes-column img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.imagen-derecha {
+    width: 30%;
+    height: 250px; /* Ajustar altura para sobresalir entre las otras */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: -60px; /* Ajusta la posición para que sobresalga entre las otras dos */
+}
+
+/* Sección Tours Populares */
+.tours-populares {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.tours-populares h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5em;
+    color: #012D3A;
+}
+
+.populares {
+    color: #F28705;
+}
+
+.tours-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.tour-item {
+    text-align: left;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tour-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.tour-item h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    color: #012D3A;
+}
+
+.tour-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+.btn-populares {
+    padding: 10px 25px;
+    border: 2px solid #F28705;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    display: block;
+    margin: 0 auto 15px auto; 
+    width: fit-content;
+    margin-top: 20px;
+}
+
+.btn-populares:hover {
+    background-color: #F28705;
+    color: #fff;
+}
+
+/* Sección Viaja con Nosotros */
+.viaja-con-nosotros {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.viaje-info {
+    display: flex;
+    gap: 20px;
+}
+
+.viaje-detalle {
+    max-width: 50%;
+}
+
+.viaje-detalle h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2em;
+    color: #012D3A;
+}
+
+.viaje-detalle ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.viaje-detalle ul li {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Sección Top Destinos */
+.top-destinos {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.top-destinos h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5em;
+    color: #012D3A;
+}
+
+.destinos-2024 {
+    color: #F28705;
+}
+
+.destinos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.destino-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección Testimonios */
+.testimonios {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.testimonios h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5em;
+    color: #012D3A;
+}
+
+.testimonios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.testimonio-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonio-item p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.testimonio-item h3 {
+    font-size: 1.2em;
+    font-family: "Poppins", sans-serif;
+    color: #012D3A;
+}
+
+/* Sección Contacto */
+.contacto {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contacto h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5em;
+    color: #012D3A;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto; /* Centra el formulario */
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form button {
+    padding: 10px;
+    border: 2px solid #F28705;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #F28705;
+    color: #fff;
+}
+
+/* Sección Footer */
+footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 20px 0;
+    color: #777;
+}
