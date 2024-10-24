@@ -1,0 +1,347 @@
+/* Estilos globales */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    background-color: #ffffff;
+}
+
+
+/* HEADER */
+/******************************************************/
+/******************************************************/
+/******************************************************/
+header {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 40px; 
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
+    box-sizing: border-box; 
+}
+
+.logo {
+    font-size: 1.8em;
+    font-family: 'Krona One', sans-serif;
+    color: black;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.nav-links a:hover {
+    color: #F19B0C;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: #012D3A;
+    margin-bottom: 4px;
+    border-radius: 5px;
+}
+.language-btn {
+    padding: 8px 20px;
+    border: 2px solid #F28705;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 30px;
+}
+
+.language-btn:hover {
+    background-color: #F28705;
+    color: #fff;
+}
+
+
+/* SECCION DE INICIO, 1 PARTE DE LA PAGINA*/
+/******************************************************/
+/******************************************************/
+/******************************************************/
+.inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 20px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.texto-inicio {
+    max-width: 45%;
+}
+
+.texto-inicio h1 {
+    margin-top: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 5em;
+    color: #012D3A;
+    margin-bottom: 20px;
+    white-space: pre-wrap;
+    margin-left: 30px;
+}
+
+.texto-inicio p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.action-btn {
+    padding: 10px 25px;
+    border: 2px solid #F28705;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: fit-content;
+}
+
+.action-btn:hover {
+    background-color: #F28705;
+    color: #fff;
+}
+
+.imagenes-inicio {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; /* Dos columnas: izquierda y derecha */
+    gap: 20px;
+    align-items: center; /* Alinea verticalmente las imágenes */
+    margin-top: 30px;
+}
+
+.imagenes-column {
+    display: grid;
+    gap: 20px;
+}
+
+.imagenes-column img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Tamaño igual para las imágenes de la izquierda */
+.imagenes-column img:nth-child(1),
+.imagenes-column img:nth-child(2) {
+    height: 250px; /* Ajustamos el tamaño para que queden bien alineadas */
+}
+
+/* Imagen derecha más grande */
+.imagen-derecha img {
+    width: 100%;
+    height: 500px; /* Hacemos la imagen más alta */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* SECCION DE TOUR MAS POPULARES PARTE 2 DE LA PAGINA*/
+/******************************************************/
+/******************************************************/
+/******************************************************/
+
+/* Sección de Tours Populares */
+/* Sección de Tours Populares */
+.tours-populares {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.tours-titulo {
+    font-size: 2.5em;
+    color: #012D3A;
+    margin-bottom: 30px;
+}
+
+.tours-populares-destacado {
+    color: #F28705;
+}
+
+.tours-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.tour-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.tour-card:hover {
+    transform: translateY(-5px);
+}
+
+.tour-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tour-info {
+    background-color: #012D3A;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tour-location {
+    font-size: 1em;
+}
+
+.tour-price {
+    color: #F28705;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.per-person {
+    color: #888;
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+
+.tour-details {
+    padding: 15px;
+    text-align: left;
+}
+
+.tour-details h3 {
+    font-size: 1.5em;
+    color: #012D3A;
+    margin-bottom: 10px;
+}
+
+.tour-extra-info {
+    font-size: 0.9em;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tour-extra-info span {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.ver-mas-tours {
+    background-color: #F28705;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 40px;
+}
+
+.ver-mas-tours:hover {
+    background-color: #012D3A;
+}
+
+
+/* Ocultar los enlaces del menú y mostrar la hamburguesa en pantallas pequeñas */
+@media (max-width: 1200px) {
+    .tours-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .nav-links {
+        display: none; /* Ocultar el menú en pantallas pequeñas */
+        position: absolute; /* Hacerlo aparecer en una posición flotante */
+        top: 60px; /* Ajustar la posición del menú cuando se muestra */
+        right: 20px;
+        background-color: #f8f8f8;
+        width: 50%;
+        flex-direction: column; /* Cambiar la dirección a columna */
+        gap: 15px;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    .hamburger {
+        display: flex; /* Mostrar el menú hamburguesa */
+        flex-direction: column;
+        cursor: pointer;
+        z-index: 1001; /* Asegurarnos de que el botón esté por encima */
+    }
+
+    .hamburger span {
+        height: 3px;
+        width: 25px;
+        background-color: #012D3A;
+        margin-bottom: 4px;
+        border-radius: 5px;
+        transition: all 0.3s;
+    }
+
+    /* Cuando el menú esté abierto */
+    .nav-open .nav-links {
+        display: flex; /* Mostrar el menú */
+    }
+
+    .nav-open .hamburger span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .nav-open .hamburger span:nth-child(2) {
+        opacity: 0; /* Ocultar la línea del medio */
+    }
+
+    .nav-open .hamburger span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .tours-container {
+        grid-template-columns: 1fr;
+    }
+
+    .tour-extra-info {
+        flex-direction: column;
+    }
+}
