@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explora Argentina - Turistango</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Turistango</div>
+        <nav class="nav-links" id="nav-links">
+            <a href="#">Tours</a>
+            <a href="#">Paquetes</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Contacto</a>
+        </nav>
+        <button id="language-toggle" class="language-btn">ES</button>
+    
+        <!-- Botón del menú hamburguesa -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Sección de inicio -->
+    <section class="inicio">
+        <div class="texto-inicio">
+            <h1>Explora <br>Argentina</h1>
+            <p>Conocé Argentina de una forma única. Somos expertos en crear viajes que te conectan con la esencia de cada destino. Descubrí paisajes increíbles y viví aventuras que te inspiren a explorar más allá de lo esperado.</p>
+ <button class="action-btn">Reúnase con un agente de viajes</button>
+            <button class="action-btn">Quiero que me contacten</button>
+        </div>
+        <div class="imagenes-inicio">
+            <div class="imagenes-column">
+                <img src="./img/premium_photo-1711031505781-2a45c879ceac.jpg" alt="Paisaje de Argentina 1">
+                <img src="./img/hielo.jpeg" alt="Paisaje de Argentina 2">
+            </div>
+            <div class="imagenes-column imagen-derecha">
+                <img src="./img/lago.jpeg" alt="Paisaje de Argentina 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de TOURS POPULARES-->
+    <section class="tours-populares">
+        <h2 class="tours-titulo">Tours más solicitados <span class="tours-populares-destacado">Populares</span></h2>
+        <div class="tours-container">
+    
+            <!-- Tarjeta 1 -->
+            <div class="tour-card">
+                <img src="./img/Buenos Aires, Argentina.jfif" alt="Descubre Buenos Aires">
+                <div class="tour-info">
+                    <span class="tour-location">🇦🇷 Buenos Aires</span>
+                    <span class="tour-price">USD $120 <span class="per-person">por persona</span></span>
+                </div>
+                <div class="tour-details">
+                    <h3>Descubre los rincones históricos de Buenos Aires</h3>
+                    <div class="tour-extra-info">
+                        <span>⏳ 7 hs</span>
+                        <span>👥 Máx. 8 personas</span>
+                        <span>📍 Buenos Aires</span>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tarjeta 2 -->
+            <div class="tour-card">
+                <img src="./img/hielo.jpeg" alt="Glaciar Perito Moreno">
+                <div class="tour-info">
+                    <span class="tour-location">🇦🇷 Patagonia</span>
+                    <span class="tour-price">USD $150 <span class="per-person">por persona</span></span>
+                </div>
+                <div class="tour-details">
+                    <h3>Aventura en el Glaciar Perito Moreno</h3>
+                    <div class="tour-extra-info">
+                        <span>⏳ 8 hs</span>
+                        <span>👥 Máx. 10 personas</span>
+                        <span>📍 Patagonia</span>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tarjeta 3 -->
+            <div class="tour-card">
+                <img src="./img/lago.jpeg" alt="Lago Nahuel Huapi">
+                <div class="tour-info">
+                    <span class="tour-location">🇦🇷 Bariloche</span>
+                    <span class="tour-price">USD $100 <span class="per-person">por persona</span></span>
+                </div>
+                <div class="tour-details">
+                    <h3>Navegación por el Lago Nahuel Huapi</h3>
+                    <div class="tour-extra-info">
+                        <span>⏳ 5 hs</span>
+                        <span>👥 Máx. 6 personas</span>
+                        <span>📍 Bariloche</span>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tarjeta 4 -->
+            <div class="tour-card">
+                <img src="./img/CIRCUITO CHICO DE BARILOCHE - Boleto a la Felicidad.jfif" alt="Circuito Chico Bariloche">
+                <div class="tour-info">
+                    <span class="tour-location">🇦🇷 Bariloche</span>
+                    <span class="tour-price">USD $90 <span class="per-person">por persona</span></span>
+                </div>
+                <div class="tour-details">
+                    <h3>Tour Circuito Chico en Bariloche</h3>
+                    <div class="tour-extra-info">
+                        <span>⏳ 4 hs</span>
+                        <span>👥 Máx. 8 personas</span>
+                        <span>📍 Bariloche</span>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tarjeta 5 -->
+            <div class="tour-card">
+                <img src="./img/7a456bab-fa19-4c22-923f-42640f0d0355.jfif" alt="Tour de Viñedos en Mendoza">
+                <div class="tour-info">
+                    <span class="tour-location">🇦🇷 Mendoza</span>
+                    <span class="tour-price">USD $130 <span class="per-person">por persona</span></span>
+                </div>
+                <div class="tour-details">
+                    <h3>Tour de Viñedos en Mendoza</h3>
+                    <div class="tour-extra-info">
+                        <span>⏳ 6 hs</span>
+                        <span>👥 Máx. 12 personas</span>
+                        <span>📍 Mendoza</span>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Tarjeta 6 -->
+            <div class="tour-card">
+                <img src="./img/Shows typical of Argentina, the tango show and Gaucho party.jfif" alt="Espectáculo de Tango en Buenos Aires">
+                <div class="tour-info">
+                    <span class="tour-location">🇦🇷 Buenos Aires</span>
+                    <span class="tour-price">USD $80 <span class="per-person">por persona</span></span>
+                </div>
+                <div class="tour-details">
+                    <h3>Espectáculo de Tango en Buenos Aires</h3>
+                    <div class="tour-extra-info">
+                        <span>⏳ 3 hs</span>
+                        <span>👥 Máx. 12 personas</span>
+                        <span>📍 Buenos Aires</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="ver-mas-tours">Ver más tours</button>
+    </section>
+    
+        <!-- Sección de VIAJA CON NOSOTROS-->
+<section class="why-choose-us">
+    <div class="why-choose-us-content">
+        <div class="image-container">
+            <img src="./img/hielo.jpeg" alt="Paisaje de montañas en Argentina">
+            <div class="badge">
+                <span>👨‍🏫</span>
+                <p>Guías Profesionales</p>
+            </div>
+        </div>
+        
+        <div class="info-container">
+            <h2>¿Por qué elegirnos?</h2>
+            <h3>Viaja con nosotros</h3>
+            
+            <div class="info-item">
+                <div class="icon">💰</div>
+                <div class="info-text">
+                    <h4>Mejores Precios</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <div class="icon">⏰</div>
+                <div class="info-text">
+                    <h4>Atención 24/7</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <div class="icon">🌎</div>
+                <div class="info-text">
+                    <h4>Expertos Locales</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <div class="icon">📋</div>
+                <div class="info-text">
+                    <h4>Itinerarios Personalizados</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Sección de Top Destinos -->
+<section class="top-destinos">
+    <h1 class="top-destinos-titulo">Lo más buscado</h1>
+    <h2 class="top-destinos-subtitulo">Top destinos</h2>
+    <h3 class="top-destinos-año">2024</h3>
+
+    <div class="slider-container">
+        <div class="slider-images">
+            <div class="slider-img">
+                <img src="./img/Buenos Aires, Argentina.jfif" alt="1" />
+                <div class="details">
+                    <h2>Buenos Aires</h2>
+                    <p>Descubre la cultura vibrante y el tango en la capital de Argentina.</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="./img/hielo.jpeg" alt="2" />
+                <div class="details">
+                    <h2>Glaciares</h2>
+                    < p>Admira la majestuosidad de los glaciares en la Patagonia.</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="./img/lago.jpeg" alt="3" />
+                <div class="details">
+                    <h2>Lago Nahuel Huapi</h2>
+                    <p>Disfruta de actividades al aire libre en este hermoso lago.</p>
+                </div>
+            </div>
+            <div class="slider-img active">
+                <img src="./img/hielo.jpeg" alt="4" />
+                <div class="details">
+                    <h2>Cerro Fitz Roy</h2>
+                    <p>Un destino ideal para los amantes del senderismo y la aventura.</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="./img/Shows typical of Argentina, the tango show and Gaucho party.jfif" alt="5" />
+                <div class="details">
+                    <h2>Fiesta Gaucha</h2>
+                    <p>Vive la tradición gaucha con espectáculos y comidas típicas.</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="./img/CIRCUITO CHICO DE BARILOCHE - Boleto a la Felicidad.jfif" alt="6" />
+                <div class="details">
+                    <h2>Bariloche</h2>
+                    <p>Explora paisajes de montaña y deliciosos chocolates.</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="./img/Buenos Aires, Argentina.jfif" alt="7" />
+                <div class="details">
+                    <h2>Ciudad de Mendoza</h2>
+                    <p>Famosa por sus viñedos y paisajes montañosos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="ver-mas-tours">Ver más destinos</button>
+</section>
+
+
+
+<script src="js/jQuery.js"></script>
+<script>
+    jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+            $(".slider-img").removeClass("active");
+            $(this).addClass("active");
+        });
+    });
+</script>
+
+
+<script src="./js/script.js"></script>
+</body>
+</html>
